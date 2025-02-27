@@ -1,0 +1,7 @@
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.csproj.AssemblyReference.cache
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.GeneratedMSBuildEditorConfig.editorconfig
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.AssemblyInfoInputs.cache
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.AssemblyInfo.cs
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.csproj.CoreCompileInputs.cache
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.MvcApplicationPartsAssemblyInfo.cache
+D:\Inomondial\FinancialLogBook\FinancialLogbook\obj\Debug\net8.0\FinancialLogbook.sourcelink.json
