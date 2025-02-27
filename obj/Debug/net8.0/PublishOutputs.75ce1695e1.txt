@@ -1,0 +1,2 @@
+D:\Inomondial\FinancialLogBook\FinancialLogbook\bin\Debug\net8.0\publish\e_sqlite3.a
+D:\Inomondial\FinancialLogBook\FinancialLogbook\bin\Debug\net8.0\publish\web.config

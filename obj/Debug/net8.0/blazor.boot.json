@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FinancialLogbook",
   "resources": {
-    "hash": "sha256-3ldg2Uvm2xNC2HdDqeky5t3Ll0eRfSvZ74ylL+0tZ3k=",
+    "hash": "sha256-O0yku9RlZeRNENAsQdxyuG4RoZ9ZdBes1gr5dH6iFZo=",
     "jsModuleNative": {
       "dotnet.native.8.0.13.3ez8jacszb.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -233,10 +233,10 @@
       "mscorlib.wasm": "sha256-RAf5jgXLg+06C4tJ3CabxAZaVjCN2/+E6fxRjRN8yHk=",
       "netstandard.wasm": "sha256-KCAE8RQwTurP5pGnGF819qf9sK++2O0rXzt6tOjlfi8=",
       "System.Private.CoreLib.wasm": "sha256-LQqLbHgeEX4HONx7GwIxGgmzIXP6n2OPxqnq+/4Tyqk=",
-      "FinancialLogbook.wasm": "sha256-FA5XhN9M6txtpGlX5vp2B/vSeFoBdNl2o6yNlejiDyM="
+      "FinancialLogbook.wasm": "sha256-YRN4XY8oVtQQfmc3ViixGdp5aa+bdFPqfl38f4H596c="
     },
     "pdb": {
-      "FinancialLogbook.pdb": "sha256-5hYgBSm/chhMET7mKeGe49p5UFezDOJwv4m9ftC7RQw="
+      "FinancialLogbook.pdb": "sha256-TF3R3In6isP0Rlbr6BAeYXa3rT0/RAI1vLRs/BngkvY="
     },
     "satelliteResources": {
       "cs": {

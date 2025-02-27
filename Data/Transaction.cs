@@ -12,16 +12,16 @@ namespace FinancialLogbook.Models
         public int Id {get; set;} // Transaction ID
 
         [Required]
-        public string Type {get; set;} // Income or Expense
+        public string Type {get; set;} = string.Empty; // Income or Expense
 
         [Required]
-        public string Category {get; set;} // Category of transaction; Food, Salary, Rent, etc.
+        public string Category {get; set;} = string.Empty; // Category of transaction; Food, Salary, Rent, etc.
 
         [Required]
         public decimal Amount {get; set;}
 
         [Required]
-        public string Description {get; set;}
+        public string Description {get; set;} = string.Empty ;
 
         [Required]
         public DateTime TransactionDate {get; set;} = DateTime.Now;
