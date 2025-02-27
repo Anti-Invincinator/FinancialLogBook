@@ -1,6 +1,67 @@
 <!-- A Blazor Component to display transaction and allow users to add new ones.-->
 
 @page "/transactions"
+@using FinancialLogbook.Services
+@using FinancialLogbook.Models
 @inject TransactionService TransactionService
 
+<h3>Financial Transactions</h3>
 
+<table class="table">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in transactions)
+        {
+            <tr>
+                <td>@transaction.Type</td>
+                <td>@transaction.Category</td>
+                <td>@transaction.Amount</td>
+                <td>@transaction.TransactionDate.ToShortDateString()</td>
+                <td>
+                    <button class="btn btn-danger" @onclick="() => DeleteTransaction(transaction.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>Add Transaction</h4>
+
+<div>
+    <input type="text" placeholder="Type (Income/Expense)" @bind="newTransaction.Type" />
+    <input type="text" placeholder="Category" @bind="newTransaction.Category" />
+    <input type="number" placeholder="Amount" @bind="newTransaction.Amount" />
+    <input type="text" placeholder="Description" @bind="newTransaction.Description" />
+    <button class="btn btn-primary" @onclick="AddTransaction">Add</button>
+</div>
+
+@code {
+    private List<Transaction> transactions = new();
+    private Transaction newTransaction = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        transactions = await TransactionService.GetTransactionsAsync();
+    }
+
+    private async Task AddTransaction()
+    {
+        await TransactionService.AddTransactionAsync(newTransaction);
+        newTransaction = new();
+        transactions = await TransactionService.GetTransactionsAsync();
+    }
+
+    private async Task DeleteTransaction(int id)
+    {
+        await TransactionService.DeleteTransactionAsync(id);
+        transactions = await TransactionService.GetTransactionsAsync();
+    }
+}

@@ -8,7 +8,7 @@ namespace FinancialLogbook.Services
     public class TransactionService{
         private readonly List<Transaction> _transactions = new();
 
-        public Task<List<Transaction>> GetTransactionsASync()
+        public Task<List<Transaction>> GetTransactionsAsync()
         {
             return Task.FromResult(_transactions.OrderByDescending(t => t.TransactionDate).ToList());
         }
@@ -23,6 +23,7 @@ namespace FinancialLogbook.Services
         public Task DeleteTransactionAsync(int id)
         {
             var transaction = _transactions.FirstOrDefault(t => t.Id == id);
+            
             if (transaction != null)
             {
                 _transactions.Remove(transaction);
