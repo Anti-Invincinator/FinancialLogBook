@@ -2,10 +2,9 @@
 /// Transaction Model
 ///
 
-using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace FinancialLogbook.Data
+namespace FinancialLogbook.Models
 {
     public class Transaction
     {
